@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --azul: #3106a7;
+  --amarelo: #e19727;
+  --background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: fit-content;
+}
+
+body,
+#container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+#initial {
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#somos {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--azul);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.titleinitial {
+  color: var(--background);
+  margin: 2vh auto;
+  width: 80%;
+  text-align: center;
+  font-size: 4vh;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10vh;
+}
+
+.imginitial {
+  width: 60vw;
+  margin-bottom: 15vh;
+  border-radius: 50%;
+}
+
+.scroll {
+  width: 80%;
+  height: 5vh;
+  position: absolute;
+  bottom: 3vh;
+  animation: pulse linear infinite 1.5s;
+}
+
+.scrollprop {
+  width: 80%;
+  height: 5vh;
+  animation: pulse linear infinite 1.5s;
+  position: absolute;
+  bottom: 0;
+}
+
+.title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 8vw;
+  margin: 5vh auto;
+}
+
+.text {
+  font-size: 6vw;
+  color: #fff;
+  width: 80%;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 4vh;
+}
+
+.litext {
+  font-size: 4vw;
+  color: #fff;
+  width: 70%;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 4vh;
+}
+
+.imgleft {
+  width: 80%;
+  position: absolute;
+  bottom: 4vh;
+  right: -20vw;
+}
+
+#propostas {
+  background-color: inherit;
+  width: 100vw;
+  height: fit-content;
+  font-weight: 500;
+  text-align: center;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  gap: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#propostas>#a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#propostas>div>h1 {
+
+  color: var(--background);
+  font-size: 5vh;
+}
+
+#campeonatos,
+#junina,
+#bartolove,
+#uniao,
+#campanhas,
+#auloes,
+#paisagismo {
+  background-color: var(--amarelo);
+}
+
+#concursos,
+#concursos,
+#halloween,
+#gincanas,
+#integracoes,
+#feira,
+#gruposestudo,
+#jardinagem {
+  background-color: var(--azul);
+}
+
+#campeonatos,
+#concursos,
+#junina,
+#halloween,
+#gincanas,
+#uniao,
+#integracoes,
+#campanhas,
+#feira,
+#auloes,
+#gruposestudo,
+#paisagismo,
+#jardinagem,
+#bartolove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+
+
+.subtitle {
+  color: var(--background);
+  font-size: 6vh;
+}
+
+.imgesportes {
+  width: 100vw;
+  margin: 5vh 0;
+}
+
+@keyframes pulse {
+  0% {
+    bottom: 3vh;
+  }
+
+  50% {
+    bottom: 1vh;
+  }
+
+  100% {
+    bottom: 3vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #initial {
+    width: 100vw;
+  }
+
+  .text {
+    font-size: 2vw;
+  }
+
+  .imginitial {
+    width: 20vw;
+  }
+
+  .titleinitial {
+    font-size: 4vw;
+    margin: auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+  .imgleft {
+    width: 30vw;
+    right: 0vw;
+  }
+
+  .litext {
+    font-size: 1.5vw;
+  }
+}
